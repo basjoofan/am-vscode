@@ -1,5 +1,7 @@
-// See https://go.microsoft.com/fwlink/?LinkId=733558
-// for the documentation about the tasks.json format
+// Tasks in VS Code can be configured to run scripts and start processes 
+// so that many of these existing tools can be used from within VS Code 
+// without having to enter a command line or write new code.
+// For more information, visit: https://code.visualstudio.com/docs/debugtest/tasks#vscode
 {
 	"version": "2.0.0",
 	"tasks": [

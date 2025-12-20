@@ -1,0 +1,6 @@
+// Workspace settings are specific to a project and override user settings. 
+// If you have specific settings that you want to apply to a specific project, you can use workspace settings. 
+// For more information, visit: https://code.visualstudio.com/docs/configure/settings#_workspace-settings
+{
+  "rust-analyzer.cargo.target": "wasm32-unknown-unknown"
+}

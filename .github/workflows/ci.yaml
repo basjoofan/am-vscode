@@ -44,12 +44,12 @@ jobs:
       - name: Echo Version
         run: echo version=$(node -p  'require('\''./package.json'\'').version') >> $GITHUB_ENV
       - name: Naming
-        run: mv basjoofan-${{ env.version }}.vsix basjoofan-vscode-${{ env.version }}.vsix
+        run: mv basjoofan-${{ env.version }}.vsix basjoofan-vsc-${{ env.version }}.vsix
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: basjoofan vscode ${{ env.version }}
-          path: basjoofan-vscode-*.vsix
+          name: basjoofan vsc ${{ env.version }}
+          path: basjoofan-vsc-*.vsix
           if-no-files-found: error
       - name: Release Version
         uses: softprops/action-gh-release@v2
@@ -57,5 +57,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: basjoofan-vscode-*.vsix
+          files: basjoofan-vsc-*.vsix
           draft: true
